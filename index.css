@@ -179,6 +179,23 @@ main {
   outline: 2px solid#7190e6;
 }
 
+#password:invalid,
+#Cpassword:invalid {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid red;
+}
+
+/* input:required + span::after {
+  content: "*Password are necessary";
+  color: red;
+} */
+
+input:invalid + span::before {
+  content: "*Passwords do not match";
+  color: red;
+}
+
 .input-flex label {
   font-size: 12px;
   font-weight: bold;

@@ -40,46 +40,59 @@
           <br />
           <p>You know you want to.</p>
         </div>
-        <form class="form-container">
+        <form action="submit" method="post" class="form-container">
           <div class="first-form-container">
             <p>Let's do this!</p>
             <div>
               <div class="flex-group">
                 <div class="input-flex">
-                  <label for="">FIRST NAME</label>
-                  <input type="text" />
+                  <label for="fname">FIRST NAME</label>
+                  <input type="text" id="fname" name="fname" required />
                 </div>
 
                 <div class="input-flex">
-                  <label for="">LAST NAME</label>
-                  <input type="text" />
+                  <label for="lname">LAST NAME</label>
+                  <input type="text" name="lname" id="lname" required />
                 </div>
               </div>
               <div class="flex-group">
                 <div class="input-flex">
-                  <label for="">EMAIL</label>
-                  <input type="text" />
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" id="email" required />
                 </div>
                 <div class="input-flex">
-                  <label for="">PHONE NUMBER</label>
-                  <input type="text" />
+                  <label for="pnumber">PHONE NUMBER</label>
+                  <input type="tel" name="pnumber" id="pnumber" />
                 </div>
               </div>
 
               <div class="flex-group">
                 <div class="input-flex">
-                  <label for="">PASSWORD</label>
-                  <input type="text" />
+                  <label for="password">PASSWORD</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                    pattern="[Aa-Zz]"
+                  />
+                  <span></span>
                 </div>
                 <div class="input-flex">
-                  <label for="">CONFIRM PASSWORD</label>
-                  <input type="text" />
+                  <label for="Cpassword">CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    name="Cpassword"
+                    id="Cpassword"
+                    required
+                    pattern="[Aa-Zz]"
+                  />
                 </div>
               </div>
             </div>
           </div>
           <div class="second-form-container">
-            <button>Create Account</button>
+            <button type="submit">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
           </div>
         </form>
