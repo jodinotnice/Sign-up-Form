@@ -16,7 +16,7 @@
     <main>
       <div class="background-container">
         <img
-          class="bakcground-img"
+          class="background-img"
           src="images/photo-1585202900225-6d3ac20a6962.avif"
           alt="background image"
         />
@@ -28,7 +28,9 @@
           />
           <p>ODIN</p>
         </div>
-        <div class="source-img">Photo by Halles West on Unsplash</div>
+        <div class="source-img">
+          Photo by <u>Halles West</u> on <u>Unsplash</u>
+        </div>
       </div>
       <div class="overall-form-container">
         <div>
@@ -40,57 +42,58 @@
           <br />
           <p>You know you want to.</p>
         </div>
-        <form action="submit" method="post" class="form-container">
-          <div class="first-form-container">
-            <p>Let's do this!</p>
-            <div>
-              <div class="flex-group">
-                <div class="input-flex">
-                  <label for="fname">FIRST NAME</label>
-                  <input type="text" id="fname" name="fname" required />
-                </div>
-
-                <div class="input-flex">
-                  <label for="lname">LAST NAME</label>
-                  <input type="text" name="lname" id="lname" required />
-                </div>
-              </div>
-              <div class="flex-group">
-                <div class="input-flex">
-                  <label for="email">EMAIL</label>
-                  <input type="email" name="email" id="email" required />
-                </div>
-                <div class="input-flex">
-                  <label for="pnumber">PHONE NUMBER</label>
-                  <input type="tel" name="pnumber" id="pnumber" />
-                </div>
+        <form action="form-test.com" method="post" class="form-container">
+          <fieldset class="first-form-container">
+            <legend>Let's do this!</legend>
+            <div class="clear"></div>
+            <div class="flex-group">
+              <div class="input-flex">
+                <label for="fname">FIRST NAME</label>
+                <input type="text" id="fname" name="fname" required />
               </div>
 
-              <div class="flex-group">
-                <div class="input-flex">
-                  <label for="password">PASSWORD</label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    required
-                    pattern="[Aa-Zz]"
-                  />
-                  <span></span>
-                </div>
-                <div class="input-flex">
-                  <label for="Cpassword">CONFIRM PASSWORD</label>
-                  <input
-                    type="password"
-                    name="Cpassword"
-                    id="Cpassword"
-                    required
-                    pattern="[Aa-Zz]"
-                  />
-                </div>
+              <div class="input-flex">
+                <label for="lname">LAST NAME</label>
+                <input type="text" name="lname" id="lname" required />
               </div>
             </div>
-          </div>
+            <div class="flex-group">
+              <div class="input-flex">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="input-flex">
+                <label for="pnumber">PHONE NUMBER</label>
+                <input type="tel" name="pnumber" id="pnumber" />
+              </div>
+            </div>
+
+            <div class="flex-group">
+              <div class="input-flex">
+                <label for="password">PASSWORD</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  pattern="[Aa-Zz]"
+                  min="6"
+                />
+                <span></span>
+              </div>
+              <div class="input-flex">
+                <label for="Cpassword">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="Cpassword"
+                  id="Cpassword"
+                  required
+                  pattern="[Aa-Zz]"
+                  min="6"
+                />
+              </div>
+            </div>
+          </fieldset>
           <div class="second-form-container">
             <button type="submit">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
