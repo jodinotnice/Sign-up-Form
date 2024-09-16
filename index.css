@@ -75,3 +75,131 @@ td,
 th {
   padding: 0;
 }
+
+main {
+  display: flex;
+  height: 100vh;
+  font-family: "Montserrat", system-ui;
+}
+
+.background-container {
+  display: flex;
+  position: relative;
+  flex-basis: 0;
+  flex-grow: 2;
+}
+
+.background-img {
+  position: absolute;
+  width: 100%;
+
+  z-index: -1;
+}
+
+.logo,
+.source-img {
+  position: absolute;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: 20%;
+  background-color: hsla(61, 0%, 3%, 0.6);
+  padding: 10px 0;
+}
+
+.logo-img {
+  width: 20%;
+}
+
+.logo p {
+  font-size: 60px;
+  color: white;
+}
+
+.source-img {
+  color: white;
+  font-size: 14px;
+  bottom: 2%;
+  left: 35%;
+}
+
+.overall-form-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 3;
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
+.overall-form-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 30vh;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.first-form-container {
+  margin-bottom: 50px;
+}
+
+.first-form-container p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #313a47;
+  margin-bottom: 20px;
+}
+
+.flex-group {
+  display: flex;
+}
+.input-flex {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+.input-flex input {
+  width: 200px;
+  height: 25px;
+  border: 1px solid #ebecef;
+  border-radius: 3px;
+}
+
+.input-flex input:focus {
+  box-shadow: 2px 2px 2px #828282;
+  outline: 2px solid#7190e6;
+}
+
+.input-flex label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #4d5560;
+}
+
+.second-form-container button {
+  background-color: #596d48;
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.second-form-container p {
+  font-weight: 500;
+}
+
+.second-form-container a {
+  color: #596d48;
+  text-decoration: none;
+}
